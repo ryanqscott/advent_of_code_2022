@@ -12,7 +12,7 @@ let totalMax = 0;
 let elfMaxFoodIndex = -1;
 while (topAmounts.length < k) {
     for (let i = 0; i < elfFoodArray.length; i++) {
-        if (elfFoodArray[i] === 0) {
+        if (!elfFoodArray[i]) {
             continue;
         }
         let calorieItems = elfFoodArray[i].split('\n');

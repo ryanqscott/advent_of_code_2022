@@ -7,6 +7,9 @@ let elfFoodArray = contents.split('\n\n');
 let max = 0;
 
 for (let ele of elfFoodArray) {
+    if (!ele) {
+        continue;
+    }
     let calorieItems = ele.split('\n');
     calorieItems = calorieItems.map(function(str) {
         return parseInt(str);
