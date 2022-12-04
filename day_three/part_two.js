@@ -19,7 +19,6 @@ function getPriority(char) {
     }
     return char.charCodeAt(0) - 96;
 }
-// let rucksackGroup = [];
 let teamSize = 3;
 let currentMember = 1;
 for (let rucksack of rucksacks) {
